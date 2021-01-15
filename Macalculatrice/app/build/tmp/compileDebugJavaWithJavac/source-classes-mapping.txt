@@ -1,0 +1,4 @@
+com/example/macalculatrice/BuildConfig.java
+ com.example.macalculatrice.BuildConfig
+com/example/macalculatrice/MainActivity.java
+ com.example.macalculatrice.MainActivity

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="constraint">
+        <item name="android:background">@color/black</item>
+    </style>
+
+    <style name="BtnNb" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">78dp</item>
+        <!--<item name="android:layout_marginRight">1sp</item>
+        <item name="android:layout_marginLeft">1sp</item>
+        <item name="android:layout_marginTop">3sp</item>-->
+
+        <item name="materialThemeOverlay">@style/MyThemeOverlayButton1</item>
+        <item name="android:background">@drawable/btn_nb</item>
+        <item name="backgroundTintMode">add</item>
+        <item name="shapeAppearanceOverlay">@style/MyShapeAppearance1</item>
+    </style>
+    <style name="MyShapeAppearance1" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <!--<item name="cornerFamily">rounded</item>
+        <item name="cornerFamilyTopLeft">rounded</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>-->
+        <item name="cornerSize">0dp</item>
+    </style>
+    <style name="MyThemeOverlayButton1" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="BtnOpt" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">78dp</item>
+        <!--<item name="android:layout_marginRight">1sp</item>
+        <item name="android:layout_marginLeft">1sp</item>
+        <item name="android:layout_marginTop">3sp</item>-->
+
+        <item name="materialThemeOverlay">@style/MyThemeOverlayButton2</item>
+        <item name="android:background">@drawable/btn_opt</item>
+        <item name="backgroundTintMode">add</item>
+        <item name="shapeAppearanceOverlay">@style/MyShapeAppearance2</item>
+    </style>
+    <style name="MyShapeAppearance2" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">0dp</item>
+    </style>
+    <style name="MyThemeOverlayButton2" parent="">
+        <item name="colorPrimary">@color/black</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+    <style name="BtnOp" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:layout_width">88dp</item>
+        <item name="android:layout_height">78dp</item>
+        <!--<item name="android:layout_marginRight">1sp</item>
+        <item name="android:layout_marginLeft">1sp</item>
+        <item name="android:layout_marginTop">3sp</item>-->
+
+        <item name="materialThemeOverlay">@style/MyThemeOverlayButton3</item>
+        <item name="android:background">@drawable/btn_op</item>
+        <item name="backgroundTintMode">add</item>
+        <item name="shapeAppearanceOverlay">@style/MyShapeAppearance3</item>
+    </style>
+    <style name="MyShapeAppearance3" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">0dp</item>
+    </style>
+    <style name="MyThemeOverlayButton3" parent="">
+        <item name="colorPrimary">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+
+</resources>
+    <!-- <item name="android:backgroundTint" tools:targetApi="lollipop">@color/argent_inverti</item> -->

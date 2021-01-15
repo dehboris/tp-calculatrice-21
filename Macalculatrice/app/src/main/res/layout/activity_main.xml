@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    style="@style/constraint"
+    android:id="@+id/clayout" >
+
+    <HorizontalScrollView
+        android:id="@+id/scroll1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layoutDirection="rtl" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end" >
+
+            <TextView
+                android:id="@+id/screen1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/argent_sombre"
+                android:textSize="22sp"
+                android:fontFamily="monospace"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="1dp"
+                android:visibility="gone"
+                android:layout_marginEnd="1dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <HorizontalScrollView
+        android:id="@+id/scroll2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll1"
+        android:layoutDirection="rtl" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end" >
+
+            <TextView
+                android:id="@+id/screen2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="60sp"
+                android:fontFamily="monospace"
+                android:textAlignment="viewEnd"
+                android:gravity="end"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginRight="1dp"
+                android:layout_marginEnd="1dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TableLayout
+        android:id="@+id/table"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnClear"
+                style="@style/BtnOpt"
+                android:text="C" />
+            <Button
+                android:id="@+id/btnPLusMoins"
+                style="@style/BtnOpt"
+                android:text="+/-"
+                android:onClick="plusMoins"/>
+            <Button
+                android:id="@+id/btnPourcent"
+                style="@style/BtnOpt"
+                android:text="%"
+                android:onClick="pourcentage"/>
+            <Button
+                android:id="@+id/btnDiv"
+                style="@style/BtnOp"
+                android:onClick="addNumberAndOp"
+                android:text="/" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="7" />
+            <Button
+                android:id="@+id/btn8"
+                android:onClick="addNumberChar"
+                style="@style/BtnNb"
+                android:text="8" />
+            <Button
+                android:id="@+id/btn9"
+                android:onClick="addNumberChar"
+                style="@style/BtnNb"
+                android:text="9" />
+            <Button
+                android:id="@+id/btnFois"
+                style="@style/BtnOp"
+                android:onClick="addNumberAndOp"
+                android:text="*" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="4" />
+            <Button
+                android:id="@+id/btn5"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="5" />
+            <Button
+                android:id="@+id/btn6"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="6" />
+            <Button
+                android:id="@+id/btnMoins"
+                android:onClick="addNumberAndOp"
+                style="@style/BtnOp"
+                android:text="-" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="1" />
+            <Button
+                android:id="@+id/btn2"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="2" />
+            <Button
+                android:id="@+id/btn3"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="3" />
+            <Button
+                android:id="@+id/btnPlus"
+                style="@style/BtnOp"
+                android:onClick="addNumberAndOp"
+                android:text="+" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/btnEff"
+                style="@style/BtnOpt"
+                android:onClick="delchar"
+                android:text="Del" />
+            <Button
+                android:id="@+id/btn0"
+                style="@style/BtnNb"
+                android:onClick="addNumberChar"
+                android:text="0" />
+            <Button
+                android:id="@+id/btnVirgule"
+                style="@style/BtnNb"
+                android:onClick="addVirguleToNumber"
+                android:text="," />
+            <Button
+                android:id="@+id/btnEgal"
+                style="@style/BtnOp"
+                android:text="=" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<Button android:id="@+id/btnBlank"
+                android:visibility="invisible"
+                android:clickable="false"
+                style="@style/BtnNb"
+                android:text="" />
+            <Button
+                android:id="@+id/btnBlank"
+                android:visibility="invisible"
+                android:clickable="false"
+                style="@style/BtnNb"
+                android:text=""
+                tools:ignore="DuplicateIds" />-->
