@@ -1,0 +1,2 @@
+include ':calculator'
+rootProject.name = "Calculator"
