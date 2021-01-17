@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">calculette</string>
+    <string name="jour">JOUR</string>
+    <string name="nuit">NUIT</string>
+    <string name="jour_1">jour 1</string>
+    <string name="btnPlus">+</string>
+
+    <string name="calculatrice">CALCULATRICE</string>
+    <string name="btnMoins">-</string>
+    <string name="btnMultiplication">*</string>
+    <string name="btnDivision">/</string>
+    <string name="btnplus">+</string>
+    <string name="_3">3</string>
+    <string name="c">C</string>
+    <string name="btnpoint">.</string>
+    <string name="btnequal">=</string>
+    <string name="btndiv">/</string>
+</resources>
